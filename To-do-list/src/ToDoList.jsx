@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+document.title = "To Do List";
 function ToDoList() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
