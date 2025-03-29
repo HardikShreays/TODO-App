@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "vite build && vite preview",
+    "deploy": "gh-pages -d build",
     "postinstall": "node scripts/postinstall.js",
     "dev": "vite",
     "build": "vite build",
