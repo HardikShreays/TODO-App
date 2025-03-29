@@ -1,12 +1,13 @@
 {
-  "homepage": "https://hardikshreays.github.io/To-do-list/",
+  "homepage": "https://hardikshreays.github.io/TODO-App/tree/main/To-do-list/",
   "name": "to-do-list",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "vite build && vite preview",
+    "postinstall": "node scripts/postinstall.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
